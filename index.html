@@ -9,25 +9,17 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
-  <meta name="description" content="moose@play">
+  <title>moose @ play</title>
+  <meta name="description" content="Homebrew &amp; independent game development from our moose to yours.">
   <meta name="author" content="Ryan Westphal">
 
-  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=2">
 
-  <link rel="stylesheet" href="//code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
-
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-1.6.min.js"></script>
-
+  <link rel="stylesheet" href="//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
 </head>
 
 <body>
@@ -38,17 +30,14 @@
         <h1><img src="images/moose-m.png" alt="moose @ play" title="moose @ play"/></h1>
       </div>
       
-      <section data-role=content>
-        <h1>moose @ play</h1>
+      <div data-role=content>
+        <h2>moose @ play</h2>
         <p>Homebrew &amp; independent game development from our moose to yours.</p>
         <ul data-role=listview data-inset=true>
-          <li data-role=list-divider><h2>Games</h2></li>
-          <li>
-          <h3><a href="#phantomDesc">Phantom</a></h3>
-            <p>Silly point-and-click adventure based on the Phantom Menace</p>
-          </li>
+          <li data-role=list-divider><h3>Games</h3></li>
+          <li><a href="#phantomDesc"><h4>Phantom</h4><p>Silly point-and-click adventure based on the Phantom Menace</p></a></li>
         </ul>
-      </section>
+      </div>
     </div>
 
     <div id="phantomDesc" data-role=page>
@@ -56,7 +45,7 @@
         <h1>Phantom</h1>
       </div>
       
-      <section data-role=content>
+      <div data-role=content>
         <a href="phantom/index.html" data-role=button rel=external>Play!</a>
         <p>This game was originally intended for <a href="http://10k.aneventapart.com/">An Event Apart's 10k contest</a>. However, the amount of graphics and text I wanted made it difficult to get the game below ten kilobytes without sacrificing too much content. We were able to get the game below 14k but ran out of time to squeeze it down more and were not able to submit it.</p>
         <h2>Style</h2>
@@ -64,13 +53,11 @@
         Old NES games are awesome and so are old PC point-&amp;-click adventures. It should go with out saying then that Shadowgate, a point-&amp;-click adventure <i>on the NES</i>, is doubly awesome. After seconds of thought I realized that a first-person adventure game is perfect for the web, a place where you point as well as click. Thus began the inspiration for our 10k entry. Our goal was an 8-bit, first-person, point-&amp;-click adventure based on Shadowgate's engine.
         </p>
         <h2>Script</h2>
-        <p>
-        An engine alone does not make a good game. We needed content and were too busy staring at pixels to think up anything interesting. I remembered a great website, <a href="http://www.the-editing-room.com">The Editing Room</a>, that writes silly, abridged scripts for popular movies and thought their Phantom Menace script would work nicely. I contacted the author and he said, &quot;Go for it,&quot; so we did.
-        </p>
+        <p>An engine alone does not make a good game. We needed content and were too busy staring at pixels to think up anything interesting. I remembered a great website, <a href="http://www.the-editing-room.com">The Editing Room</a>, that writes silly, abridged scripts for popular movies and thought their Phantom Menace script would work nicely. I contacted the author and he said, &quot;Go for it,&quot; so we did.</p>
         <p>
         I didn't intend to complete graphics and scenes for the entire script so now the Internet has: <i>Star Wars: Episode I &ndash; The Phantom Menace: The Abridged Script: The Abridged Game</i>. Hope you like it!
         </p>
-      </section>
+      </div>
     </div>
   </div> <!--! end of #container -->
 
@@ -78,25 +65,13 @@
   <!-- Javascript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
-  <script>
-    $(document).bind("mobileinit", function(){
-      $.extend($.mobile , { metaViewportContent: false });
-    });
-  </script>
-
-  <script src="//code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+  <script src="//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
   
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
   <script src="js/index.js"></script>
   <!-- end concatenated and minified scripts-->
-  
-  
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
-  <![endif]-->
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->
