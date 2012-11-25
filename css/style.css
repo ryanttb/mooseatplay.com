@@ -37,8 +37,14 @@ p a {
   white-space: nowrap;
 }
 
+.site-nav img {
+  vertical-align: middle;
+}
 
-
+.ui-footer {
+  font-size: .8em;
+  padding-left: .5em;
+}
 
 
 
