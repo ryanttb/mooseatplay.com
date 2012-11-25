@@ -41,6 +41,10 @@ p a {
   vertical-align: middle;
 }
 
+hr {
+  margin-top: 4em;
+}
+
 .ui-footer {
   font-size: .8em;
   padding-left: .5em;
