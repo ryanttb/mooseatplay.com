@@ -1,77 +1,69 @@
 <!doctype html>  
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title>moose @ play</title>
-  <meta name="description" content="Homebrew &amp; independent game development from our moose to yours.">
+  <title>moose at play</title>
+  <meta name="description" content="Independent game development from our moose to yours.">
   <meta name="author" content="Ryan Westphal">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div id="index">
-    <div data-role=page>
-      <div data-role=header data-theme=c>
-        <h1><img src="images/moose-m.png" alt="moose @ play" title="moose @ play"/></h1>
-      </div>
-      
-      <div data-role=content>
-        <h2>moose @ play</h2>
-        <p>Homebrew &amp; independent game development from our moose to yours.</p>
-        <ul data-role=listview data-inset=true>
-          <li data-role=list-divider><h3>Games</h3></li>
-          <li><a href="#phantomDesc"><h4>Phantom</h4><p>Silly point-and-click adventure based on the Phantom Menace</p></a></li>
-        </ul>
-      </div>
+  <div id="index" data-role="page">
+    <div data-role=header data-theme="c">
+      <h1><img src="images/moose-m.png" alt="moose at play" title="moose at play"/></h1>
+      <p class="logo-text">moose at play</p>
     </div>
-
-    <div id="phantomDesc" data-role=page>
-      <div data-role=header data-theme=b>
-        <h1>Phantom</h1>
-      </div>
-      
-      <div data-role=content>
-        <a href="phantom/index.html" data-role=button rel=external>Play!</a>
-        <p>This game was originally intended for <a href="http://10k.aneventapart.com/">An Event Apart's 10k contest</a>. However, the amount of graphics and text I wanted made it difficult to get the game below ten kilobytes without sacrificing too much content. We were able to get the game below 14k but ran out of time to squeeze it down more and were not able to submit it.</p>
-        <h2>Style</h2>
-        <p>
-        Old NES games are awesome and so are old PC point-&amp;-click adventures. It should go with out saying then that Shadowgate, a point-&amp;-click adventure <i>on the NES</i>, is doubly awesome. After seconds of thought I realized that a first-person adventure game is perfect for the web, a place where you point as well as click. Thus began the inspiration for our 10k entry. Our goal was an 8-bit, first-person, point-&amp;-click adventure based on Shadowgate's engine.
-        </p>
-        <h2>Script</h2>
-        <p>An engine alone does not make a good game. We needed content and were too busy staring at pixels to think up anything interesting. I remembered a great website, <a href="http://www.the-editing-room.com">The Editing Room</a>, that writes silly, abridged scripts for popular movies and thought their Phantom Menace script would work nicely. I contacted the author and he said, &quot;Go for it,&quot; so we did.</p>
-        <p>
-        I didn't intend to complete graphics and scenes for the entire script so now the Internet has: <i>Star Wars: Episode I &ndash; The Phantom Menace: The Abridged Script: The Abridged Game</i>. Hope you like it!
-        </p>
-      </div>
+    
+    <div data-role=content>
+      <p>Independent game development from our moose to yours.</p>
+      <ul data-role="listview" data-inset="true" class="site-nav">
+        <li data-role=list-divider><a href="#index"><h3>Home</h3></a></li>
+        <li data-role=list-divider><h3>Games</h3></li>
+        <li><a href="#phantomDesc"><h4>Phantom</h4><p>Silly point-and-click adventure based on the Phantom Menace</p></a></li>
+      </ul>
     </div>
-  </div> <!--! end of #container -->
+  </div>
 
+  <div id="phantomDesc" data-role="page">
+    <div data-role=header>
+      <h1>Phantom</h1>
+    </div>
+    
+    <div data-role=content>
+      <a href="phantom/index.html" data-role=button rel=external target="_blank">Play Phanom now!</a>
 
-  <!-- Javascript at the bottom for fast page loading -->
+      <p>Phantom was originally intended for <a href="http://10k.aneventapart.com/">An Event Apart's 10k contest</a>. However, the amount of graphics and text we wanted made it difficult to get the game below ten kilobytes without sacrificing too much content. We were able to get the game below 14k but ran out of time to squeeze it down more and were not able to submit it.</p>
 
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-  <script src="//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-  
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
+      <h2>Style</h2>
+      <p> Old NES games are awesome and so are old PC point-&amp;-click adventures. It should go with out saying then that Shadowgate, a point-&amp;-click adventure <i>on the NES</i>, is doubly awesome. After seconds of thought I realized that a first-person adventure game is perfect for the web, a place where you point as well as click. Thus began the inspiration for our 10k entry. Our goal was an 8-bit, first-person, point-&amp;-click adventure based on Shadowgate's style.</p>
+
+      <p>All graphics are original pixel art by Moose at Play</p>
+
+      <h2>Script</h2>
+      <p>A game engine alone does not make a good game. We needed content but were too busy staring at pixels and code to think up anything interesting. I remembered a great website, <a href="http://www.the-editing-room.com">The Editing Room</a>, that writes silly, abridged scripts for popular movies and thought their Phantom Menace script would work nicely. I contacted the author and he said, &quot;Go for it,&quot; so we did.</p>
+
+      <p>I didn't intend to complete graphics and scenes for the entire abridged script so now the Internet has: <i>Star Wars: Episode I &ndash; The Phantom Menace: The Abridged Script: The Abridged Game</i>. We hope you like it!</p>
+
+      <ul data-role="listview" data-inset="true" class="site-nav">
+        <li data-role=list-divider><a href="#index"><h3>Home</h3></a></li>
+        <li data-role=list-divider><h3>Games</h3></li>
+        <li><a href="#phantomDesc"><h4>Phantom</h4><p>Silly point-and-click adventure based on the Phantom Menace</p></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
   <script src="js/index.js"></script>
-  <!-- end concatenated and minified scripts-->
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->
